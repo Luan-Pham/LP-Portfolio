@@ -4,11 +4,7 @@ import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  return (
-    <Container>
-      <NavBar />
-    </Container>
-  );
+  return <NavBar />;
 }
 
 export default App;
