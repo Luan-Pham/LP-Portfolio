@@ -2,6 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useState, useEffect } from 'react';
+import Linkedin from '../assets/Linkedin.svg';
+import GitHub from '../assets/GitHub.svg';
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState('home');
@@ -80,10 +82,10 @@ function NavBar() {
           <span className="navbar-text">
             <div className="social-icon">
               <a href="https://github.com/Luan-Pham">
-                <img src={''} alt="GitHub logo" />
+                <img src={GitHub} alt="GitHub logo" />
               </a>
               <a href="https://www.linkedin.com/in/luan-pham3/">
-                <img src={''} alt="GitHub logo" />
+                <img src={Linkedin} alt="GitHub logo" />
               </a>
             </div>
             <button className="vvd" onClick={() => console.log('connect')}>
