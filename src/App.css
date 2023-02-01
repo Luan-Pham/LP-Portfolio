@@ -261,7 +261,8 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 
 .splideCard {
-  min-height: 25rem;
+  width: calc(((100% + 2rem) / 3) - 2rem);
+  height: 10rem;
   border-radius: 2rem;
   overflow: hidden;
   position: relative;
