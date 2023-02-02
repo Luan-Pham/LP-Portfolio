@@ -256,33 +256,12 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   width: 96%;
 }
 
-/* .slideCotainer {
-  margin: 4 rem 0 rem;
-}
-
-.splideCard {
-  width: calc(((100% + 2rem) / 3) - 2rem);
-  height: 10rem;
-  border-radius: 2rem;
-  overflow: hidden;
-  position: relative;
-}
-
-.splideCard img {
-  border-radius: 30px;
-}
-
-.splideCard p {
-  position: absolute;
-  z-index: 10;
-  left: 50%;
-  bottom: 0%;
-  transform: translate(-50%, 0%);
+.card-text {
   color: white;
-  width: 100%;
-  text-align: center;
-  font-weight: 500;
-  font-size: 2rem;
-  display: flex;
-  justify-content: center;
-} */
+  font-weight: 600;
+  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+}
+
+.cardPictures {
+  opacity: 75%;
+}

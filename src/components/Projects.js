@@ -1,33 +1,48 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Card, Button, Row, Col } from 'react-bootstrap';
-import { useBootstrapBreakpoints } from 'react-bootstrap/esm/ThemeProvider';
-import Thyme from '../assets/Thyme.jpg';
+import Cook from '../assets/Cook.jpg';
+import Arcade from '../assets/Arcade.jpg';
+import Marvel from '../assets/Marvel.jpg';
 
 function Projects() {
+  const [hover, setHover] = useState();
+
   const projects = [
     {
       title: 'Thyme2Cook',
       description:
         'Latest application that I am working on! Ap app to help you decide to what to make for dinner using the spoonacular API.',
-      imgUrl: Thyme,
+      picture: Cook,
       link: 'https://luan-pham.github.io/Thyme2Cook/',
     },
     {
       title: 'Barcade',
       description:
-        'Group project collaborating with other sudents in bootcamp. A virtual bar and arcade platform used to socialize with friends, play games, and set high scores!',
-      imgUrl: '',
+        'Group project collaborating with other students in bootcamp. A virtual bar and arcade platform used to socialize with friends, play games, and set high scores!',
+      picture: Arcade,
       link: 'https://secure-everglades-09731.herokuapp.com/',
     },
     {
       title: 'Marvel Search',
-      description: `Collaborative project to use the marvel API in order to serach for information about its expansive universe. Users can serach for data about a character's backstory, comic books, and movies`,
-      imgUrl: '',
+      description: `Collaborative project to use the marvel API in order to search for information about its expansive universe. Users can serach for data about a character's backstory, comic books, and movies`,
+      picture: Marvel,
       link: 'https://luan-pham.github.io/Thyme2Cook/',
     },
-    { title: '', description: '', imgUrl: '', link: '' },
-    { title: '', description: '', imgUrl: '', link: '' },
-    { title: '', description: '', imgUrl: '', link: '' },
+    {
+      title: 'Weather Forecast',
+      description:
+        'Application to search the weather forecast for a city using the OpenWeather API.',
+      picture: '',
+      link: 'https://luan-pham.github.io/Weather-App/',
+    },
+    { title: '', description: '', picture: '', link: '' },
+    {
+      title: 'Tech Blog',
+      description:
+        'Application where users can post personal blogs and also view posts made by others',
+      picture: '',
+      link: 'https://luan-tech-blog.herokuapp.com/',
+    },
   ];
   return (
     <Container>
@@ -37,14 +52,17 @@ function Projects() {
           <Col xs={6} md={4}>
             <Card
               style={{
-                width: '18rem',
+                width: '20rem',
+                height: '20rem',
                 margin: '3rem',
                 padding: '1px',
+                overflow: 'hidden',
+                justifyContent: 'center',
               }}
             >
-              <Card.Img variant="top" src={project.imgUrl} />
+              <Card.Img src={project.picture} className="cardPictures" />
               <Card.ImgOverlay>
-                <Card.Body>
+                <Card.Body className="card-text">
                   <Card.Title>{project.title}</Card.Title>
                   <Card.Text>{project.description}</Card.Text>
                   <Button variant="primary">Go somewhere</Button>
