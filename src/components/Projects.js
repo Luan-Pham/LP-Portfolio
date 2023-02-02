@@ -5,7 +5,7 @@ import Arcade from '../assets/Arcade.jpg';
 import Marvel from '../assets/Marvel.jpg';
 
 function Projects() {
-  const [hover, setHover] = useState();
+  const [hover, setHover] = useState(false);
 
   const projects = [
     {
@@ -62,9 +62,13 @@ function Projects() {
             >
               <Card.Img src={project.picture} className="cardPictures" />
               <Card.ImgOverlay>
-                <Card.Body className="card-text">
-                  <Card.Title>{project.title}</Card.Title>
-                  <Card.Text>{project.description}</Card.Text>
+                <Card.Body
+                  className="card-text"
+                  onMouseEnter={() => setHover(true)}
+                  onMouseLeave={() => setHover(false)}
+                >
+                  {!hover && <Card.Title>{project.title}</Card.Title>}
+                  {hover && <Card.Text>{project.description}</Card.Text>}
                   <Button variant="primary">Go somewhere</Button>
                 </Card.Body>
               </Card.ImgOverlay>
