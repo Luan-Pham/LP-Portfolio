@@ -67,9 +67,15 @@ function Projects() {
                   onMouseEnter={() => setHover(true)}
                   onMouseLeave={() => setHover(false)}
                 >
-                  {!hover && <Card.Title>{project.title}</Card.Title>}
-                  {hover && <Card.Text>{project.description}</Card.Text>}
-                  <Button variant="primary">Go somewhere</Button>
+                  {hover ? (
+                    <div>
+                      <Card.Title>{project.title}</Card.Title>
+                      <Card.Text>{project.description}</Card.Text>
+                      <Button variant="secondary">Visit the App</Button>
+                    </div>
+                  ) : (
+                    <Card.Title>{project.title}</Card.Title>
+                  )}
                 </Card.Body>
               </Card.ImgOverlay>
             </Card>
