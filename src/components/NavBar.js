@@ -88,7 +88,7 @@ function NavBar() {
                 <img src={Linkedin} alt="GitHub logo" />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log('connect')}>
+            <button onClick={() => console.log('connect')}>
               <span>Contact Me</span>
             </button>
           </span>

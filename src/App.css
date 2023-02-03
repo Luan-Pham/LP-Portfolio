@@ -260,8 +260,14 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   color: white;
   font-weight: 600;
   text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+  position: 'relative';
+  padding: auto;
 }
 
-.cardPictures {
-  opacity: 75%;
+.opaque {
+  opacity: 0.5;
+}
+
+.picha {
+  opacity: 0.5;
 }

@@ -6,6 +6,7 @@ import Marvel from '../assets/Marvel.jpg';
 
 function Projects() {
   const [hover, setHover] = useState(false);
+  const [opaque, setOpaque] = useState('');
 
   const projects = [
     {
@@ -58,9 +59,16 @@ function Projects() {
                 padding: '1px',
                 overflow: 'hidden',
                 justifyContent: 'center',
+                alignContent: 'center',
+                textAlign: 'center',
+                position: 'relative',
               }}
             >
-              <Card.Img src={project.picture} className="cardPictures" />
+              <Card.Img
+                src={project.picture}
+                className={opaque}
+                onMouseEnter={() => setOpaque('picha')}
+              />
               <Card.ImgOverlay>
                 <Card.Body
                   className="card-text"
@@ -74,7 +82,14 @@ function Projects() {
                       <Button variant="secondary">Visit the App</Button>
                     </div>
                   ) : (
-                    <Card.Title>{project.title}</Card.Title>
+                    <Card.Title
+                      style={{
+                        fontSize: '2rem',
+                        padding: '100px 0',
+                      }}
+                    >
+                      {project.title}
+                    </Card.Title>
                   )}
                 </Card.Body>
               </Card.ImgOverlay>
