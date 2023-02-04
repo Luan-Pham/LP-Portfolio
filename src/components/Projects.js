@@ -12,7 +12,7 @@ function Projects() {
     {
       title: 'Thyme2Cook',
       description:
-        'Latest application that I am working on! Ap app to help you decide to what to make for dinner using the spoonacular API.',
+        'Latest application that I am working on! An app to help you decide to what to make for dinner using the spoonacular API.',
       picture: Cook,
       link: 'https://luan-pham.github.io/Thyme2Cook/',
     },
@@ -36,7 +36,13 @@ function Projects() {
       picture: '',
       link: 'https://luan-pham.github.io/Weather-App/',
     },
-    { title: '', description: '', picture: '', link: '' },
+    {
+      title: 'Team Profile Generator',
+      description:
+        'An application to create a profile for a team. User can follow instructions on the readme to install and run application.',
+      picture: '',
+      link: 'https://github.com/Luan-Pham/Team-Profile-Generator',
+    },
     {
       title: 'Tech Blog',
       description:
