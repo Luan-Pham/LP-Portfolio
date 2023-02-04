@@ -50,6 +50,13 @@ function Projects() {
       picture: '',
       link: 'https://luan-tech-blog.herokuapp.com/',
     },
+    {
+      title: 'Day Schedular',
+      description:
+        'An application that allows the user to schedule out their workday (9-5). Time slots appear in different colors to help you stay organized! (past in red, present in blue, and future in green)',
+      picture: '',
+      link: 'https://luan-pham.github.io/Scheduler/',
+    },
   ];
   return (
     <Container>
