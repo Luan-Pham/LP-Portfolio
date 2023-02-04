@@ -3,6 +3,10 @@ import { Container, Card, Button, Row, Col } from 'react-bootstrap';
 import Cook from '../assets/Cook.jpg';
 import Arcade from '../assets/Arcade.jpg';
 import Marvel from '../assets/Marvel.jpg';
+import Blog from '../assets/Blog.jpg';
+import Schedule from '../assets/Schedule.jpg';
+import Team from '../assets/Team.jpg';
+import Weather from '../assets/Weather.jpg';
 
 function Projects() {
   const [hover, setHover] = useState(false);
@@ -51,7 +55,7 @@ function Projects() {
       link: 'https://luan-tech-blog.herokuapp.com/',
     },
     {
-      title: 'Day Schedular',
+      title: 'Day Scheduler',
       description:
         'An application that allows the user to schedule out their workday (9-5). Time slots appear in different colors to help you stay organized! (past in red, present in blue, and future in green)',
       picture: '',
