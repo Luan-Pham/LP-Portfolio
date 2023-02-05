@@ -37,28 +37,28 @@ function Projects() {
       title: 'Weather Forecast',
       description:
         'Application to search the weather forecast for a city using the OpenWeather API.',
-      picture: '',
+      picture: Weather,
       link: 'https://luan-pham.github.io/Weather-App/',
     },
     {
       title: 'Team Profile Generator',
       description:
         'An application to create a profile for a team. User can follow instructions on the readme to install and run application.',
-      picture: '',
+      picture: Team,
       link: 'https://github.com/Luan-Pham/Team-Profile-Generator',
     },
     {
       title: 'Tech Blog',
       description:
         'Application where users can post personal blogs and also view posts made by others',
-      picture: '',
+      picture: Blog,
       link: 'https://luan-tech-blog.herokuapp.com/',
     },
     {
       title: 'Day Scheduler',
       description:
         'An application that allows the user to schedule out their workday (9-5). Time slots appear in different colors to help you stay organized! (past in red, present in blue, and future in green)',
-      picture: '',
+      picture: Schedule,
       link: 'https://luan-pham.github.io/Scheduler/',
     },
   ];

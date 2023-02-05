@@ -22,7 +22,15 @@ function About() {
             </p>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={Grad} alt="Profile Pic" />
+            <figure class="framebox">
+              <img src={Grad} alt="Profile Pic" />
+              <figcaption>
+                <h3>
+                  Luan <span>Pham</span>
+                </h3>
+                <h4>Web Developer</h4>
+              </figcaption>
+            </figure>
           </Col>
         </Row>
       </Container>
