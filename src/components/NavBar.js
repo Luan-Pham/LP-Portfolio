@@ -43,7 +43,7 @@ function NavBar() {
               Home
             </Nav.Link>
             <Nav.Link
-              href="#link"
+              href="#about"
               className={
                 activeLink === 'about' ? 'active navbar-link' : 'navbar-link'
               }
@@ -52,7 +52,7 @@ function NavBar() {
               About
             </Nav.Link>
             <Nav.Link
-              href="#link"
+              href="#projects"
               className={
                 activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'
               }
@@ -61,7 +61,7 @@ function NavBar() {
               Projects
             </Nav.Link>
             <Nav.Link
-              href="#link"
+              href="#skills"
               className={
                 activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'
               }
@@ -70,7 +70,7 @@ function NavBar() {
               Skills
             </Nav.Link>
             <Nav.Link
-              href="#link"
+              href="#resume"
               className={
                 activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'
               }
@@ -88,7 +88,7 @@ function NavBar() {
                 <img src={Linkedin} alt="GitHub logo" />
               </a>
             </div>
-            <button onClick={() => console.log('connect')}>
+            <button>
               <span>Contact Me</span>
             </button>
           </span>

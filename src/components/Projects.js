@@ -63,16 +63,16 @@ function Projects() {
     },
   ];
   return (
-    <Container>
+    <Container id="projects">
       <h2> Check out some of my projects!</h2>
       <Row>
         {projects.map((project, index) => (
-          <Col xs={6} md={4}>
+          <Col>
             <Card
               style={{
                 width: '20rem',
                 height: '20rem',
-                margin: '3rem',
+                margin: '3rem 0 3rem 0',
                 padding: '1px',
                 overflow: 'hidden',
                 justifyContent: 'center',
@@ -82,8 +82,8 @@ function Projects() {
               }}
             >
               <Card.Img
+                style={{ position: 'absolute', alignSelf: 'start' }}
                 src={project.picture}
-                className={opaque}
                 onMouseEnter={() => setOpaque('picha')}
               />
               <Card.ImgOverlay>
@@ -93,11 +93,11 @@ function Projects() {
                   onMouseLeave={() => setHover(false)}
                 >
                   {hover ? (
-                    <div>
+                    <Container>
                       <Card.Title>{project.title}</Card.Title>
                       <Card.Text>{project.description}</Card.Text>
                       <Button variant="secondary">Visit the App</Button>
-                    </div>
+                    </Container>
                   ) : (
                     <Card.Title
                       style={{
