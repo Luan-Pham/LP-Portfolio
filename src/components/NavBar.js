@@ -88,9 +88,11 @@ function NavBar() {
                 <img src={Linkedin} alt="GitHub logo" />
               </a>
             </div>
-            <button>
-              <span>Contact Me</span>
-            </button>
+            <a href="#contact">
+              <button>
+                <span>Contact Me</span>
+              </button>
+            </a>
           </span>
         </Navbar.Collapse>
       </Container>

@@ -25,7 +25,7 @@ function Email() {
   };
 
   return (
-    <Container>
+    <Container id="contact">
       <Form onSubmit={sendEmail}>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Name</Form.Label>
