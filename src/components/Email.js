@@ -1,10 +1,7 @@
-import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Container, Form, Button } from 'react-bootstrap';
 
 function Email() {
-  const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -12,7 +9,7 @@ function Email() {
       .sendForm(
         'service_vu8xyen',
         'template_k9w004z',
-        form.current,
+        e.target,
         '5sDfmC3edxSQWcGSm'
       )
       .then(
@@ -23,24 +20,28 @@ function Email() {
           console.log(error.text);
         }
       );
+    alert('Message Successfuly Sent!');
+    e.target.reset();
   };
 
   return (
     <Container>
-      <Form>
+      <Form onSubmit={sendEmail}>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Label>Name</Form.Label>
+          <Form.Control type="name" placeholder="Your Name" name="name" />
           <Form.Label>Email address</Form.Label>
-          <Form.Control type="name" placeholder="Your Name" />
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Email Address" />
+          <Form.Control type="email" placeholder="Email Address" name="email" />
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-          <Form.Label>Example textarea</Form.Label>
-          <Form.Control as="textarea" rows={5} />
+          <Form.Label>Message</Form.Label>
+          <Form.Control as="textarea" rows={5} name="message" />
         </Form.Group>
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
+        <div className="text-center">
+          <Button variant="dark" type="submit" size="lg">
+            Submit
+          </Button>
+        </div>
       </Form>
     </Container>
   );
