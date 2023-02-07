@@ -7,10 +7,11 @@ import Blog from '../assets/Blog.jpg';
 import Schedule from '../assets/Schedule.jpg';
 import Team from '../assets/Team.jpg';
 import Weather from '../assets/Weather.jpg';
+import Octo from '../assets/Octo.jpg';
+import Secure from '../assets/Secure.jpg';
 
 function Projects() {
   const [hover, setHover] = useState(false);
-  const [opaque, setOpaque] = useState('');
 
   const projects = [
     {
@@ -61,6 +62,19 @@ function Projects() {
       picture: Schedule,
       link: 'https://luan-pham.github.io/Scheduler/',
     },
+    {
+      title: 'Password Generator',
+      description:
+        'One of my very first applications. Allows the user to create a secured password with specified parameters.',
+      picture: Secure,
+      link: 'https://luan-pham.github.io/Password-Generator/',
+    },
+    {
+      title: 'My GitHub',
+      description: 'Find other projects that I am working on!',
+      picture: Octo,
+      link: 'https://github.com/Luan-Pham',
+    },
   ];
   return (
     <Container id="projects">
@@ -84,7 +98,6 @@ function Projects() {
               <Card.Img
                 style={{ position: 'absolute', alignSelf: 'start' }}
                 src={project.picture}
-                onMouseEnter={() => setOpaque('picha')}
               />
               <Card.ImgOverlay>
                 <Card.Body
@@ -94,9 +107,11 @@ function Projects() {
                 >
                   {hover ? (
                     <Container>
-                      <Card.Title>{project.title}</Card.Title>
+                      <Card.Title style={{ fontSize: '2rem' }}>
+                        {project.title}
+                      </Card.Title>
                       <Card.Text>{project.description}</Card.Text>
-                      <Button variant="secondary">Visit the App</Button>
+                      <Button variant="secondary">Visit</Button>
                     </Container>
                   ) : (
                     <Card.Title
