@@ -1,12 +1,12 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { useState, useEffect } from 'react';
-import Linkedin from '../assets/Linkedin.svg';
-import GitHub from '../assets/GitHub.svg';
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import { useState, useEffect } from "react";
+import Linkedin from "../assets/Linkedin.svg";
+import GitHub from "../assets/GitHub.svg";
 
 function NavBar() {
-  const [activeLink, setActiveLink] = useState('home');
+  const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -18,8 +18,8 @@ function NavBar() {
       }
     };
 
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   const onUpdateActiveLink = (value) => {
@@ -27,7 +27,7 @@ function NavBar() {
   };
 
   return (
-    <Navbar expand="lg" className={scrolled ? 'scrolled' : ''}>
+    <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">Luan Pham</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -36,45 +36,36 @@ function NavBar() {
             <Nav.Link
               href="#home"
               className={
-                activeLink === 'home' ? 'active navbar-link' : 'navbar-link'
+                activeLink === "home" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink('home')}
+              onClick={() => onUpdateActiveLink("home")}
             >
               Home
             </Nav.Link>
             <Nav.Link
-              href="#about"
-              className={
-                activeLink === 'about' ? 'active navbar-link' : 'navbar-link'
-              }
-              onClick={() => onUpdateActiveLink('about')}
-            >
-              About
-            </Nav.Link>
-            <Nav.Link
-              href="#projects"
-              className={
-                activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'
-              }
-              onClick={() => onUpdateActiveLink('projects')}
-            >
-              Projects
-            </Nav.Link>
-            <Nav.Link
               href="#skills"
               className={
-                activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'
+                activeLink === "skills" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink('skills')}
+              onClick={() => onUpdateActiveLink("skills")}
             >
               Skills
             </Nav.Link>
             <Nav.Link
+              href="#projects"
+              className={
+                activeLink === "projects" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("projects")}
+            >
+              Projects
+            </Nav.Link>
+            <Nav.Link
               href="#resume"
               className={
-                activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'
+                activeLink === "resume" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink('resume')}
+              onClick={() => onUpdateActiveLink("resume")}
             >
               Resume
             </Nav.Link>
