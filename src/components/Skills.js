@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, ListGroup } from "react-bootstrap";
+import { IconBase } from "react-icons";
 import { FaNodeJs, FaReact, FaHtml5, FaCss3 } from "react-icons/fa";
 
 function Skills() {
@@ -16,7 +17,7 @@ function Skills() {
         <ListGroup>
           {skills.map((skill) => (
             <ListGroup.Item>
-              {skill.skill} <icon as={skill.icon}></icon>
+              {skill.skill} <IconBase a></IconBase>
             </ListGroup.Item>
           ))}
         </ListGroup>
