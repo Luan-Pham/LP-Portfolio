@@ -1,10 +1,11 @@
 import React from 'react';
 import { Container, ListGroup } from 'react-bootstrap';
-import { FaNodeJs, FaReact, FaHtml5, FaCss3 } from 'react-icons/fa';
+import { FaNodeJs, FaReact, FaCss3 } from 'react-icons/fa';
+import ReactOriginalIcon from 'react-devicons/react/original';
 
 function Skills() {
   const skills = [
-    { skill: 'HTML', icon: FaHtml5 },
+    { skill: 'HTML', icon: <ReactOriginalIcon /> },
     { skill: 'CSS', icon: FaCss3 },
     { skill: 'Node.js', icon: FaNodeJs },
     { skill: 'React', icon: FaReact },
@@ -17,7 +18,7 @@ function Skills() {
           {skills.map((skill) => (
             <ListGroup.Item>
               {skill.skill}
-              <div>{skill.icon}</div>
+              {skill.icon}
             </ListGroup.Item>
           ))}
         </ListGroup>
