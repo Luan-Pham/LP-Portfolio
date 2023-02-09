@@ -32,7 +32,7 @@ function Projects() {
       title: 'Marvel Search',
       description: `Collaborative project to use the marvel API in order to search for information about its expansive universe. Users can serach for data about a character's backstory, comic books, and movies`,
       picture: Marvel,
-      link: 'https://luan-pham.github.io/Thyme2Cook/',
+      link: 'https://luan-pham.github.io/Marvel-Project/',
     },
     {
       title: 'Weather Forecast',
