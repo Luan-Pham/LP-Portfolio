@@ -120,7 +120,9 @@ function Projects() {
                         {project.title}
                       </Card.Title>
                       <Card.Text>{project.description}</Card.Text>
-                      <Button variant="secondary">Visit</Button>
+                      <a href={project.link}>
+                        <Button variant="secondary">Visit</Button>
+                      </a>
                     </Container>
                   ) : (
                     <Card.Title
