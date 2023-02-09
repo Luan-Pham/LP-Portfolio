@@ -25,10 +25,25 @@ function Skills() {
 
   return (
     <Container id="skills">
+      <h2 style={{ margin: '4rem 0 2rem 0', textAlign: 'center' }}>
+        {' '}
+        My Skills
+      </h2>
       <Row>
         {skills.map((skill) => (
-          <Col>
-            <Card style={{ width: '18rem', margin: '1rem' }}>
+          <Col
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignContent: 'center',
+            }}
+          >
+            <Card
+              style={{
+                width: '18rem',
+                margin: '1rem',
+              }}
+            >
               <Card.Body>
                 <Card.Header
                   style={{

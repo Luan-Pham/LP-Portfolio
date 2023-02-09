@@ -78,10 +78,19 @@ function Projects() {
   ];
   return (
     <Container id="projects">
-      <h2 style={{ marginTop: '4rem' }}> Check out some of my projects!</h2>
+      <h2 style={{ margin: '4rem 0 2rem 0', textAlign: 'center' }}>
+        {' '}
+        Check out some of my projects!
+      </h2>
       <Row>
         {projects.map((project, index) => (
-          <Col>
+          <Col
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignContent: 'center',
+            }}
+          >
             <Card
               style={{
                 width: '20rem',
