@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Luan-Pham/LP-Portfolio/static/css/main.69bf0fe1.css",
+    "main.js": "/Luan-Pham/LP-Portfolio/static/js/main.97d80fc9.js",
+    "static/js/787.ecc693e5.chunk.js": "/Luan-Pham/LP-Portfolio/static/js/787.ecc693e5.chunk.js",
+    "static/media/Marvel.jpg": "/Luan-Pham/LP-Portfolio/static/media/Marvel.eea7df50fc9a0444228c.jpg",
+    "static/media/Cook.jpg": "/Luan-Pham/LP-Portfolio/static/media/Cook.070a42f03ec22ea75365.jpg",
+    "static/media/Schedule.jpg": "/Luan-Pham/LP-Portfolio/static/media/Schedule.cfdb6369247da34461f8.jpg",
+    "static/media/Team.jpg": "/Luan-Pham/LP-Portfolio/static/media/Team.bd364949ec141494cd8f.jpg",
+    "static/media/Weather.jpg": "/Luan-Pham/LP-Portfolio/static/media/Weather.2de35849d79d5b8a056a.jpg",
+    "static/media/Arcade.jpg": "/Luan-Pham/LP-Portfolio/static/media/Arcade.8e123208627b60bfd1be.jpg",
+    "static/media/Secure.jpg": "/Luan-Pham/LP-Portfolio/static/media/Secure.977b11c985921900eeb7.jpg",
+    "static/media/Grad.jpg": "/Luan-Pham/LP-Portfolio/static/media/Grad.c2c4fa57c1defc2b031f.jpg",
+    "static/media/Blog.jpg": "/Luan-Pham/LP-Portfolio/static/media/Blog.b9304d18f35c029703bf.jpg",
+    "static/media/Octo.jpg": "/Luan-Pham/LP-Portfolio/static/media/Octo.3ffe8cf832d6d0d7d0cf.jpg",
+    "static/media/GitHub.svg": "/Luan-Pham/LP-Portfolio/static/media/GitHub.52038f708085aaed24b27fd472bd3725.svg",
+    "index.html": "/Luan-Pham/LP-Portfolio/index.html",
+    "static/media/Linkedin.svg": "/Luan-Pham/LP-Portfolio/static/media/Linkedin.533b8ebad32ca2af296844000888f98c.svg",
+    "main.69bf0fe1.css.map": "/Luan-Pham/LP-Portfolio/static/css/main.69bf0fe1.css.map",
+    "main.97d80fc9.js.map": "/Luan-Pham/LP-Portfolio/static/js/main.97d80fc9.js.map",
+    "787.ecc693e5.chunk.js.map": "/Luan-Pham/LP-Portfolio/static/js/787.ecc693e5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69bf0fe1.css",
+    "static/js/main.97d80fc9.js"
+  ]
+}
