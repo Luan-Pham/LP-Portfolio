@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Container, Card, Button, Row, Col } from 'react-bootstrap';
-import Cook from '../assets/Cook.jpg';
-import Arcade from '../assets/Arcade.jpg';
-import Marvel from '../assets/Marvel.jpg';
-import Blog from '../assets/Blog.jpg';
-import Schedule from '../assets/Schedule.jpg';
-import Team from '../assets/Team.jpg';
-import Weather from '../assets/Weather.jpg';
-import Octo from '../assets/Octo.jpg';
-import Secure from '../assets/Secure.jpg';
+import Cook from '../assets/images/Cook.jpg';
+import Arcade from '../assets/images/Arcade.jpg';
+import Marvel from '../assets/images/Marvel.jpg';
+import Blog from '../assets/images/Blog.jpg';
+import Schedule from '../assets/images/Schedule.jpg';
+import Team from '../assets/images/Team.jpg';
+import Weather from '../assets/images/Weather.jpg';
+import Octo from '../assets/images/Octo.jpg';
+import Secure from '../assets/images/Secure.jpg';
 
 function Projects() {
   const [hover, setHover] = useState(false);
@@ -78,7 +78,7 @@ function Projects() {
   ];
   return (
     <Container id="projects">
-      <h2> Check out some of my projects!</h2>
+      <h2 style={{ marginTop: '4rem' }}> Check out some of my projects!</h2>
       <Row>
         {projects.map((project, index) => (
           <Col>

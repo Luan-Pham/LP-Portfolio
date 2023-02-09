@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Grad from '../assets/Grad.jpg';
+import Grad from '../assets/images/Grad.jpg';
 
 function About() {
   return (
