@@ -25,8 +25,11 @@ function Email() {
   };
 
   return (
-    <Container id="contact">
-      <Form onSubmit={sendEmail}>
+    <Container id="contact" className="d-flex justify-content-center">
+      <Form
+        onSubmit={sendEmail}
+        style={{ margin: '2rem', width: '80%', position: 'relative' }}
+      >
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Name</Form.Label>
           <Form.Control type="name" placeholder="Your Name" name="name" />
