@@ -28,7 +28,7 @@ function Email() {
     <Container id="contact" className="d-flex justify-content-center">
       <Form
         onSubmit={sendEmail}
-        style={{ margin: '2rem', width: '80%', position: 'relative' }}
+        style={{ margin: '2rem', width: '75%', position: 'relative' }}
       >
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Name</Form.Label>
