@@ -30,4 +30,4 @@ Here are some of the tools that I used to create this portfolio.
 
 -https://github.com/Luan-Pham
 
--phamexb@gmail.com
+-Luan.Pham@gmail.com
