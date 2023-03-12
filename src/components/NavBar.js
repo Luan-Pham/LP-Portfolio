@@ -61,7 +61,7 @@ function NavBar() {
               Projects
             </Nav.Link>
             <Nav.Link
-              href="https://resume.io/r/x4wKMkaU8"
+              href="https://docs.google.com/document/d/1-D5UtDlpnQdAjUDLJjjSHbjwilAVlZNXyR0evbBvem8/edit?usp=sharing"
               className={
                 activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'
               }
